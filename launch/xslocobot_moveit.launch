@@ -12,7 +12,7 @@
   <arg name="dof"                               default="6"/>
   <arg name="use_camera"                        default="false"/>
   <arg name="use_moveit_rviz"                   default="true"/>
-  <arg name="world_name"                        default="$(find locobot_simulation)/worlds/project_sorting.world"/>
+  <arg name="world_name"                        default="$(find locobot_simulation)/worlds/project_sorting_all_objects.world"/>
 
   <include if="$(arg use_gazebo)" file="$(find locobot_simulation)/launch/simulation.launch">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
