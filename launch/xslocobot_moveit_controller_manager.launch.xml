@@ -10,7 +10,7 @@
    <param name="moveit_controller_manager" value="moveit_fake_controller_manager/MoveItFakeControllerManager"/>
 
    <!-- The rest of the params are specific to this plugin -->
-   <rosparam file="$(find interbotix_xslocobot_moveit)/config/fake_controllers/$(arg dof)dof_controllers.yaml"/>
+   <rosparam file="$(find locobot_moveit)/config/fake_controllers/$(arg dof)dof_controllers.yaml"/>
 
  </group>
 
@@ -19,7 +19,7 @@
     <param name="moveit_controller_manager" value="moveit_simple_controller_manager/MoveItSimpleControllerManager"/>
 
     <!-- loads controllers to the param server -->
-    <rosparam file="$(find interbotix_xslocobot_moveit)/config/controllers/$(arg dof)dof_controllers.yaml"/>
+    <rosparam file="$(find locobot_moveit)/config/controllers/$(arg dof)dof_controllers.yaml"/>
 
   </group>
 
